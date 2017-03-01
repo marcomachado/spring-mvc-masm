@@ -12,9 +12,6 @@ public class Price {
 	private BigDecimal value;
 	private BookType bookType;
 	
-	public Price() {
-	}
-	
 	public BigDecimal getValue() {
 		return value;
 	}
