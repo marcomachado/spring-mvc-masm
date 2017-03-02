@@ -22,15 +22,6 @@ public class ProductsController {
 		return "products/ok";
 	}
 	
-	/*@RequestMapping("/produtos")
-	public String save(List<Product> products) {
-		for (Product p : products) {
-			productDAO.save(p);
-			System.out.println("Cadastrando o produto "+p);
-		}
-		return "products/ok";
-	}*/
-	
 	@RequestMapping("/produtos/form")
 	public String form() {
 		return "products/form";

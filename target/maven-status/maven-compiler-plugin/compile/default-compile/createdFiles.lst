@@ -1,0 +1,9 @@
+br\com\masm\loja\daos\ProductDAO.class
+br\com\masm\loja\models\Price.class
+br\com\masm\loja\conf\AppWebConfiguration.class
+br\com\masm\loja\conf\JPAConfiguration.class
+br\com\masm\loja\conf\ServletSpringMVC.class
+br\com\masm\loja\controllers\ProductsController.class
+br\com\masm\loja\controllers\HomeController.class
+br\com\masm\loja\models\BookType.class
+br\com\masm\loja\models\Product.class
