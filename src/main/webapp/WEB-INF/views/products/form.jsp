@@ -28,6 +28,7 @@
 					name="prices[${status.index}].bookType" value="${bookType}">
 			</div>
 		</c:forEach>
+		
 		<div>
 			<input type="submit" value="Cadastrar">
 		</div>
