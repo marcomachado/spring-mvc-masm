@@ -22,8 +22,8 @@ public class ProductsController {
 	
 	@RequestMapping("/form")
 	public ModelAndView form() {
-		ModelAndView modelAndView = new ModelAndView("produtos/form");
-		modelAndView.addObject("types", BookType.values());
+		ModelAndView modelAndView = new ModelAndView("products/form");
+		modelAndView.addObject("bookTypes", BookType.values());
 		return modelAndView;
 	}
 	

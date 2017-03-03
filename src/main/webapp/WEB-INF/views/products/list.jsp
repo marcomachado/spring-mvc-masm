@@ -5,17 +5,19 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;
 charset=UTF-8">
-<title>Insert title here</title>
+<title>Listagem de Produtos Cadastrados</title>
 </head>
 <body>
 	<table>
 		<tr>
 			<td>Titulo</td>
+			<td>Descrição</td>
 			<td>Valores</td>
 		</tr>
 		<c:forEach items="${products}" var="product">
 			<tr>
 				<td>${product.title}</td>
+				<td>${product.description}</td>
 				<td>
 					<c:forEach items="${product.prices}" var="price"> 
 						[${price.value} - ${price.bookType}]

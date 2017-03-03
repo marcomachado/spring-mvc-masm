@@ -20,15 +20,16 @@
 			<label for="pages">Número de paginas</label> <input type="text"
 				name="pages" id="pages" />
 		</div>
-		<c:forEach items="${types}" var="bookType" varStatus="status">
-			<div>
-				<label for="price_${bookType}">${bookType}</label> <input
-					type="text" name="prices[${status.index}].value"
-					id="price_${bookType}"> <input type="hidden"
-					name="prices[${status.index}].bookType" value="${bookType}">
-			</div>
-		</c:forEach>
-		
+		<div>
+			<c:forEach items="${bookTypes}" var="bookType" varStatus="status">
+				<div>
+					<label for="preco_${bookType}">${bookType}</label> <input
+						type="text" name="prices[${status.index}].value"
+						id="preco_${bookType}" /> <input type="hidden"
+						name="prices[${status.index}].bookType" value="${bookType}" />
+				</div>
+			</c:forEach>
+		</div>
 		<div>
 			<input type="submit" value="Cadastrar">
 		</div>
