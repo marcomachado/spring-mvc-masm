@@ -6,6 +6,7 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import br.com.masm.loja.daos.ProductDAO;
 import br.com.masm.loja.models.BookType;
@@ -27,10 +28,10 @@ public class ProductsController {
 	}
 	
 	@RequestMapping(method=RequestMethod.POST)
-	public String save(Product product) {
+	public String save(Product product, RedirectAttributes redirectAttributes) {
 		productDAO.save(product);
-		System.out.println("Cadastrando o produto "+product);
-		return "products/ok";
+		redirectAttributes.addFlashAttribute("sucesso", "Produto cadastrado com sucesso");
+		return "redirect:produtos";
 	}
 	
 	@RequestMapping(method=RequestMethod.GET)
