@@ -6,4 +6,5 @@ br\com\masm\loja\conf\ServletSpringMVC.class
 br\com\masm\loja\controllers\ProductsController.class
 br\com\masm\loja\controllers\HomeController.class
 br\com\masm\loja\models\BookType.class
+br\com\masm\loja\validation\ProductValidator.class
 br\com\masm\loja\models\Product.class

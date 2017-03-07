@@ -8,6 +8,7 @@ charset=UTF-8">
 <title>Listagem de Produtos Cadastrados</title>
 </head>
 <body>
+	${sucesso}
 	<table>
 		<tr>
 			<td>Titulo</td>

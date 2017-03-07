@@ -1,13 +1,22 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-
+<%@taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>Cadastro de produtos</title>
 </head>
+<spring:hasBindErrors name="product">
+	<ul>
+		<c:forEach var="error" items="${errors.allErrors}">
+			<li><spring:message code="${error.code}"
+					text="${error.defaultMessage}" /></li>
+		</c:forEach>
+	</ul>
+</spring:hasBindErrors>
 <body>
 	<form method="post" action="/spring-mvc-masm/produtos">
+
 		<div>
 			<label for="title"> Título</label> <input type="text" name="title"
 				id="title" />
