@@ -14,6 +14,7 @@ charset=UTF-8">
 			<td>Titulo</td>
 			<td>Descrição</td>
 			<td>Valores</td>
+			<td>Data de Lançamento</td>
 		</tr>
 		<c:forEach items="${products}" var="product">
 			<tr>
@@ -24,6 +25,7 @@ charset=UTF-8">
 						[${price.value} - ${price.bookType}]
 					</c:forEach>
 				</td>
+				<td>${product.releaseDate}</td>
 			</tr>
 		</c:forEach>
 	</table>
